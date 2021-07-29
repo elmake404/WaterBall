@@ -4,18 +4,29 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    public static Transform TransformPlayer;
+
     private Rigidbody _rbMain;
+    [SerializeField]
+    private Vector3 _DirectionMove = Vector3.forward;
     [SerializeField]
     private Anchor _anchor;
     [SerializeField]
-    private float _drowningForce;
-    [SerializeField]
     private int _namberAnchor;
     [SerializeField]
+    private float _speed;
     private bool _isDrowning;
+    private void Awake()
+    {
+        TransformPlayer = transform;
+    }
     private void Start()
     {
         _rbMain = GetComponent<Rigidbody>();
+    }
+    private void FixedUpdate()
+    {
+        transform.Translate(_DirectionMove*_speed);
     }
 
     private void Update()

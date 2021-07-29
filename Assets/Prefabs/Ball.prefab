@@ -415,10 +415,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 012f867baaf3a2c469748851f0479662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _DirectionMove: {x: 0, y: 0, z: 1}
   _anchor: {fileID: 5932700528946813363, guid: 8fb2555fb99986d4192dbbfee958107b, type: 3}
-  _drowningForce: 0
   _namberAnchor: 10
-  _isDrowning: 0
+  _speed: 0.1
 --- !u!114 &5086326878271288316
 MonoBehaviour:
   m_ObjectHideFlags: 0
