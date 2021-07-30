@@ -26,7 +26,8 @@ public class PlayerMove : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        transform.Translate(_DirectionMove*_speed);
+        if (GameStage.IsGameFlowe)
+            transform.Translate(_DirectionMove * _speed);
     }
 
     private void Update()
@@ -37,7 +38,7 @@ public class PlayerMove : MonoBehaviour
             if (touch.phase == TouchPhase.Moved)
             {
                 _isDrowning = true;
-                _rbMain.velocity = Vector3.down*10;
+                _rbMain.velocity = Vector3.down * 10;
             }
         }
         else

@@ -35,6 +35,7 @@ public class CameraMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        transform.position = Vector3.SmoothDamp(transform.position, _target - _offSet, ref _velocity, _cameraSmoothness);
+        if (GameStage.IsGameFlowe)
+            transform.position = Vector3.SmoothDamp(transform.position, _target - _offSet, ref _velocity, _cameraSmoothness);
     }
 }
