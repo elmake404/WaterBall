@@ -12,16 +12,24 @@ public class CanvasManager : MonoBehaviour
     private Image  _levelBar;
     private Transform _finishPos;
     [SerializeField]
-    private Text _textLevelWin, _textLevelCurent, _textLevelTarget;
+    private Text _textLevelWin, _textLevelCurent, _textLevelTarget, _textCrystal;
 
     private void Start()
     {
+        PlayerMove.TransformPlayer.GetComponent<PLayerLife>().GetCrystal += AddCrystal;
+
+        _textCrystal.text = PlayerPrefs.GetInt("Crystal").ToString();
         _textLevelWin.text ="Level "+ PlayerPrefs.GetInt("Level").ToString();
         _textLevelCurent.text = PlayerPrefs.GetInt("Level").ToString();
         _textLevelTarget.text = (PlayerPrefs.GetInt("Level") +1).ToString();
     }
     private void FixedUpdate()
     {
+    }
+    private void AddCrystal(int NamberCoin)
+    {
+        PlayerPrefs.SetInt("Crystal", PlayerPrefs.GetInt("Crystal")+NamberCoin);
+        _textCrystal.text = PlayerPrefs.GetInt("Crystal").ToString();
     }
     public void GameStageWindow(Stage stageGame)
     {

@@ -902,6 +902,7 @@ MonoBehaviour:
   _textLevelWin: {fileID: 114328863915241926}
   _textLevelCurent: {fileID: 114298626813103218}
   _textLevelTarget: {fileID: 114444994017357224}
+  _textCrystal: {fileID: 114725197512022106}
 --- !u!114 &637982954498457011
 MonoBehaviour:
   m_ObjectHideFlags: 0

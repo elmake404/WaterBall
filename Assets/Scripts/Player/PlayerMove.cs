@@ -14,8 +14,8 @@ public class PlayerMove : MonoBehaviour
     [SerializeField]
     private int _namberAnchor;
     [SerializeField]
-    private float _speed;
-    private bool _isDrowning;
+    private float _speedMove;
+    public bool IsDrowning { get; private set; }
     private void Awake()
     {
         TransformPlayer = transform;
@@ -27,7 +27,7 @@ public class PlayerMove : MonoBehaviour
     private void FixedUpdate()
     {
         if (GameStage.IsGameFlowe)
-            transform.Translate(_DirectionMove * _speed);
+            transform.Translate(_DirectionMove * _speedMove);
     }
 
     private void Update()
@@ -37,20 +37,20 @@ public class PlayerMove : MonoBehaviour
             Touch touch = TouchUtility.GetTouch(0);
             if (touch.phase == TouchPhase.Moved)
             {
-                _isDrowning = true;
+                IsDrowning = true;
                 _rbMain.velocity = Vector3.down * 10;
             }
         }
         else
         {
-            _isDrowning = false;
+            IsDrowning = false;
         }
     }
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.layer == 4)
         {
-            if (_rbMain.velocity.y < 0 && !_isDrowning)
+            if (_rbMain.velocity.y < 0 && !IsDrowning)
             {
                 _rbMain.velocity = Vector3.Slerp(_rbMain.velocity, Vector3.zero, 0.7f);
             }
