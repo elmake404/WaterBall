@@ -1832,6 +1832,18 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2722622699142037677, guid: c99112446c4a9704aa55924b05e19fe1, type: 3}
+      propertyPath: _speedRotationMax
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2722622699142037677, guid: c99112446c4a9704aa55924b05e19fe1, type: 3}
+      propertyPath: _accelerationRotation
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2722622699142037677, guid: c99112446c4a9704aa55924b05e19fe1, type: 3}
+      propertyPath: _decelerationRotation
+      value: 0.017
+      objectReference: {fileID: 0}
     - target: {fileID: 5176716663057533885, guid: c99112446c4a9704aa55924b05e19fe1, type: 3}
       propertyPath: m_UseGravity
       value: 0
