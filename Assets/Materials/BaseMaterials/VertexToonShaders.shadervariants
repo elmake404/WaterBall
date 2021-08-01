@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: VertexToonShaders
+  m_Shaders:
+    data:
+      first: {fileID: 4800000, guid: 06feb9fa3e956472aa3780aa03f67388, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: 8438d1245632d4249a17410c209ade38, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: e2baf3cae8edc4daf94c9adc2154be00, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: b5fb7cbf5f5654dedaf7fe28e8302008, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: c4bc1ed1e41944b8ba484f85722bd48d, type: 3}
+      second:
+        variants: []

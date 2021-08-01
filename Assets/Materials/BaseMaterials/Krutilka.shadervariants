@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Krutilka
+  m_Shaders:
+    data:
+      first: {fileID: 4800000, guid: 08ac5b63598274dbd8f5a6fcea27bf4c, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: 3cb6b8c9f0eb04a1c971c14d4b20af35, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: c57b2d96c82bf442185a1c640dd5368d, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: b5fb7cbf5f5654dedaf7fe28e8302008, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: 8438d1245632d4249a17410c209ade38, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: a7b65348f01f740edb3c320359be69dd, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: 52e105a58717b492eb300248102757cb, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: f16f98febee604fcda19719fff9f6cd5, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: 265dd8e2ac5f64a2c99d8d734526060a, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: 3ba9827202ed2446c913655a531c4b66, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: 4bebbc03affdd4c5bbc631377d69c7aa, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: 981f008212e6c49baa7eb8133d0d21a8, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: a182ed87eafca40a59434acedb9c1b19, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: b3993a3ddb4af4c5797fee0423fffacf, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: c4bc1ed1e41944b8ba484f85722bd48d, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: c973f50269758480ab8908fa209d7949, type: 3}
+      second:
+        variants: []
+    data:
+      first: {fileID: 4800000, guid: ec34194a9cd5f47f78cd0c78697a2107, type: 3}
+      second:
+        variants: []
