@@ -12,6 +12,8 @@ public class PlayerMove : MonoBehaviour
     [SerializeField]
     private Anchor _anchor;
     [SerializeField]
+    private ParticleSystem _particleBubbles;
+    [SerializeField]
     private int _namberAnchor;
     [SerializeField]
     private float _speedMove, _sinkingSpeed;
@@ -43,6 +45,9 @@ public class PlayerMove : MonoBehaviour
         }
         else
         {
+            if (_particleBubbles != null)
+                _particleBubbles.Stop();
+
             IsDrowning = false;
         }
     }
@@ -50,9 +55,10 @@ public class PlayerMove : MonoBehaviour
     {
         if (other.gameObject.layer == 4)
         {
-            if (_rbMain.velocity.y < 0 && !IsDrowning)
+            if (IsDrowning&&_particleBubbles!=null)
             {
-                _rbMain.velocity = Vector3.Slerp(_rbMain.velocity, Vector3.zero, 0.7f);
+                if (_particleBubbles.isStopped)
+                    _particleBubbles.Play();
             }
         }
     }
