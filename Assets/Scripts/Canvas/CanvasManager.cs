@@ -16,7 +16,7 @@ public class CanvasManager : MonoBehaviour
 
     private void Start()
     {
-        PlayerMove.TransformPlayer.GetComponent<PLayerLife>().GetCrystal += AddCrystal;
+        PlayerMove.TransformPlayer.GetComponent<PlayerLife>().GetCrystal += AddCrystal;
 
         _textCrystal.text = PlayerPrefs.GetInt("Crystal").ToString();
         _textLevelWin.text ="Level "+ PlayerPrefs.GetInt("Level").ToString();

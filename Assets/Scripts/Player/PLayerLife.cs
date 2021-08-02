@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PLayerLife : MonoBehaviour
+public class PlayerLife : MonoBehaviour
 {
     public delegate void CollectorInt(int namber);
     public event CollectorInt GetCrystal;
@@ -14,7 +14,7 @@ public class PLayerLife : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.layer == 6)
+        if (collision.gameObject.layer == 7)
         {
             GameStage.Instance.ChangeStage(Stage.LostGame);
             _rbMain.constraints = RigidbodyConstraints.None;

@@ -14,7 +14,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField]
     private int _namberAnchor;
     [SerializeField]
-    private float _speedMove;
+    private float _speedMove, _sinkingSpeed;
     public bool IsDrowning { get; private set; }
     private void Awake()
     {
@@ -38,7 +38,7 @@ public class PlayerMove : MonoBehaviour
             if (touch.phase == TouchPhase.Moved)
             {
                 IsDrowning = true;
-                _rbMain.velocity = Vector3.down * 10;
+                _rbMain.velocity = Vector3.down * _sinkingSpeed;
             }
         }
         else
