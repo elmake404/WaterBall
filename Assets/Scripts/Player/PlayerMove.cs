@@ -10,6 +10,8 @@ public class PlayerMove : MonoBehaviour
     [SerializeField]
     private Vector3 _DirectionMove = Vector3.forward;
     [SerializeField]
+    private Animator _animator;
+    [SerializeField]
     private Anchor _anchor;
     [SerializeField]
     private ParticleSystem _particleBubbles;
@@ -34,28 +36,41 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
-        if (TouchUtility.TouchCount > 0)
+        //if (TouchUtility.TouchCount > 0)
+        //{
+        Touch touch = TouchUtility.GetTouch(0);
+        if (touch.phase == TouchPhase.Began)
         {
-            Touch touch = TouchUtility.GetTouch(0);
-            if (touch.phase == TouchPhase.Moved)
-            {
-                IsDrowning = true;
-                _rbMain.velocity = Vector3.down * _sinkingSpeed;
-            }
+            _animator.SetBool("deflate", true);
         }
-        else
+        else if (touch.phase == TouchPhase.Moved)
+        {
+            IsDrowning = true;
+            _rbMain.velocity = Vector3.down * _sinkingSpeed;
+        }
+        else if (touch.phase==TouchPhase.Ended)
         {
             if (_particleBubbles != null)
                 _particleBubbles.Stop();
 
+            _animator.SetBool("deflate", false);
+
             IsDrowning = false;
         }
+        //}
+        //else
+        //{
+        //    if (_particleBubbles != null)
+        //        _particleBubbles.Stop();
+
+        //    IsDrowning = false;
+        //}
     }
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.layer == 4)
         {
-            if (IsDrowning&&_particleBubbles!=null)
+            if (IsDrowning && _particleBubbles != null)
             {
                 if (_particleBubbles.isStopped)
                     _particleBubbles.Play();

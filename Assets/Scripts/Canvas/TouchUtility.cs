@@ -26,7 +26,7 @@ public static class TouchUtility
             return Input.GetTouch(index);
 #else
         Touch touch = new Touch();
-        
+        touch.phase = TouchPhase.Canceled;
         if (index == 0)
         {
             if (Input.GetMouseButtonDown(0))
