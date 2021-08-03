@@ -72,7 +72,7 @@ public class PlayerMove : MonoBehaviour
         {
             if (IsDrowning && _particleBubbles != null)
             {
-                if (_particleBubbles.isStopped)
+                if (!_particleBubbles.isPlaying)
                     _particleBubbles.Play();
             }
         }
