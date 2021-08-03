@@ -7,28 +7,75 @@ public class ModellBall : MonoBehaviour
     private PlayerMove _playerMove;
 
     [SerializeField]
-    private float _speedRotationMax, _decelerationRotation, _accelerationRotation;
-    [SerializeField]
-    private float _speedRotation;
+    private float _speedRotation, _angleOfRotation;
+    private Vector3 _oldPos, _currentPos;
+    private List<GameObject> _waters = new List<GameObject>();
+
     private void Start()
     {
         _playerMove = PlayerMove.TransformPlayer.GetComponent<PlayerMove>();
+        _oldPos = _playerMove.transform.position;
+        _currentPos = _playerMove.transform.position;
     }
     private void FixedUpdate()
     {
         RotationBall();
+
+        _currentPos = _playerMove.transform.position;
     }
+    private void LateUpdate()
+    {
+        _oldPos = _playerMove.transform.position;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == 4)
+        {
+            _waters.Add(other.gameObject);
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.layer == 4)
+        {
+            _waters.Remove(other.gameObject);
+        }
+    }
+    public bool WaterTest()
+    {
+        if (_waters.Count > 0)
+            return true;
+        else
+            return false;
+    }
+
     private void RotationBall()
     {
-        if (_playerMove.IsDrowning)
+        int sensitivity;
+
+        if (WaterTest())
+            sensitivity = 2;
+        else
+            sensitivity = 3;
+
+        float DirectionTravel = (float)System.Math.Round(_oldPos.y - _currentPos.y, sensitivity);
+        Quaternion rotation;
+        if (DirectionTravel == 0)
         {
-            _speedRotation = Mathf.Lerp(_speedRotation, 0, _decelerationRotation);
+            rotation = Quaternion.Euler(Vector3.zero);
         }
         else
         {
-            _speedRotation = Mathf.Lerp(_speedRotation, _speedRotationMax, _accelerationRotation);
+            if (DirectionTravel > 0)
+            {
+                rotation = Quaternion.Euler(Vector3.right * -_angleOfRotation);
+            }
+            else
+            {
+                rotation = Quaternion.Euler(Vector3.right * _angleOfRotation);
+            }
         }
 
-        transform.Rotate(Vector3.right * _speedRotation);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, _speedRotation);
     }
 }

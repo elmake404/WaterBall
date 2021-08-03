@@ -47,7 +47,7 @@ public class Gerridae : MonoBehaviour
             WaterTest();
         }
     }
-    private void WaterTest()
+    public void WaterTest()
     {
         if (_waters.Count > 0)
             _rbMain.useGravity = false;
