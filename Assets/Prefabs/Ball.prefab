@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 1379200421449115829}
   - component: {fileID: 1379200421449115832}
   - component: {fileID: 5086326878271288316}
-  - component: {fileID: 7090563522452552578}
+  - component: {fileID: 4361704161231445704}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -368,6 +368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _DirectionMove: {x: 0, y: 0, z: 1}
   _anchor: {fileID: 5932700528946813363, guid: 8fb2555fb99986d4192dbbfee958107b, type: 3}
+  _particleBubbles: {fileID: 0}
   _namberAnchor: 10
   _speedMove: 0.1
   _sinkingSpeed: 10
@@ -383,7 +384,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 678e7ca35940ee346bd31238440f67c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7090563522452552578
+  _particleWaterTouch: {fileID: 0}
+--- !u!114 &4361704161231445704
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -776,7 +778,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4976480491542031844}
-  - component: {fileID: 2722622699142037677}
   m_Layer: 0
   m_Name: Modellball
   m_TagString: Untagged
@@ -799,22 +800,6 @@ Transform:
   m_Father: {fileID: 1379200421449115833}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2722622699142037677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5889142779583508717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb68e15252ec5d642954a3a4e1fe870d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speedRotationMax: 3
-  _decelerationRotation: 0.01
-  _accelerationRotation: 0.03
-  _speedRotation: 0
 --- !u!1 &5996399339576083961
 GameObject:
   m_ObjectHideFlags: 0
