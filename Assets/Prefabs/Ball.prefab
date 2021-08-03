@@ -779,6 +779,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4976480491542031844}
+  - component: {fileID: 3792456105611104511}
+  - component: {fileID: 4656801123152741774}
+  - component: {fileID: 3154878768666070992}
   m_Layer: 0
   m_Name: Modellball
   m_TagString: Untagged
@@ -793,14 +796,57 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5889142779583508717}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.017, z: 0.14}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.001, z: -0.021}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 954866612760292892}
   m_Father: {fileID: 1379200421449115833}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3792456105611104511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5889142779583508717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb68e15252ec5d642954a3a4e1fe870d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speedRotation: 0
+  _angleOfRotation: 0
+--- !u!54 &4656801123152741774
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5889142779583508717}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &3154878768666070992
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5889142779583508717}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.6
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5996399339576083961
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,11 +1183,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3495980270778712215, guid: a86a6bbbe6be0944e962467b38bbe538, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.046
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495980270778712215, guid: a86a6bbbe6be0944e962467b38bbe538, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.151
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495980270778712215, guid: a86a6bbbe6be0944e962467b38bbe538, type: 3}
       propertyPath: m_LocalRotation.w
