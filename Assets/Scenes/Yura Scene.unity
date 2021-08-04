@@ -2118,21 +2118,9 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1379200421449115829, guid: c99112446c4a9704aa55924b05e19fe1, type: 3}
-      propertyPath: m_Mass
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1379200421449115829, guid: c99112446c4a9704aa55924b05e19fe1, type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1379200421449115830, guid: c99112446c4a9704aa55924b05e19fe1, type: 3}
       propertyPath: m_Name
       value: Ball (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1379200421449115832, guid: c99112446c4a9704aa55924b05e19fe1, type: 3}
-      propertyPath: _speedMove
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1379200421449115832, guid: c99112446c4a9704aa55924b05e19fe1, type: 3}
       propertyPath: _drowningForce
@@ -2230,6 +2218,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3154878768666070992, guid: c99112446c4a9704aa55924b05e19fe1, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3415912023338196318, guid: c99112446c4a9704aa55924b05e19fe1, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -2237,6 +2229,10 @@ PrefabInstance:
     - target: {fileID: 3554293652141642843, guid: c99112446c4a9704aa55924b05e19fe1, type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3792456105611104511, guid: c99112446c4a9704aa55924b05e19fe1, type: 3}
+      propertyPath: _twistingSpeed
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4304881060004705090, guid: c99112446c4a9704aa55924b05e19fe1, type: 3}
       propertyPath: m_Mesh
@@ -2868,7 +2864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2680268675468580867, guid: 37d9a5a6a40decc4891ce3d4364cfc78, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2680268675468580867, guid: 37d9a5a6a40decc4891ce3d4364cfc78, type: 3}
       propertyPath: m_CastShadows

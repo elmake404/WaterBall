@@ -7,7 +7,7 @@ public class ModellBall : MonoBehaviour
     private PlayerMove _playerMove;
 
     [SerializeField]
-    private float _speedRotation, _angleOfRotation;
+    private float _speedRotation, _twistingSpeed, _angleOfRotation;
     private Vector3 _oldPos, _currentPos;
     private List<GameObject> _waters = new List<GameObject>();
 
@@ -62,20 +62,36 @@ public class ModellBall : MonoBehaviour
         Quaternion rotation;
         if (DirectionTravel == 0)
         {
-            rotation = Quaternion.Euler(Vector3.zero);
+            Vector3 euler = new Vector3(0, transform.eulerAngles.y, transform.eulerAngles.z);
+
+            rotation = Quaternion.Euler(euler);
         }
         else
         {
             if (DirectionTravel > 0)
             {
-                rotation = Quaternion.Euler(Vector3.right * -_angleOfRotation);
+                Vector3 euler = new Vector3(1 * -_angleOfRotation, transform.eulerAngles.y, transform.eulerAngles.z);
+
+                rotation = Quaternion.Euler(euler);
             }
             else
             {
-                rotation = Quaternion.Euler(Vector3.right * _angleOfRotation);
+                Vector3 euler = new Vector3(1 * _angleOfRotation, transform.eulerAngles.y, transform.eulerAngles.z);
+
+                rotation = Quaternion.Euler(euler);
             }
         }
 
+        if (WaterTest())
+        {
+            Vector3 euler = new Vector3(0, transform.eulerAngles.y, 0);
+
+            rotation = Quaternion.Euler(euler);
+        }
+        else
+        {
+            transform.Rotate(Vector3.forward * _twistingSpeed);
+        }
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, _speedRotation);
     }
 }

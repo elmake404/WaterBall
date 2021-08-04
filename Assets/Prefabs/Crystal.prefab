@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6554754965002869795}
   - component: {fileID: 6554754965002869792}
   - component: {fileID: 2718541941543747435}
+  - component: {fileID: 9196443404834689381}
   m_Layer: 0
   m_Name: Crystal
   m_TagString: Crystal
@@ -95,3 +96,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.939696, y: 1.682831, z: 1.8917279}
   m_Center: {x: 0, y: 0.050551504, z: 0.047646016}
+--- !u!114 &9196443404834689381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6554754965002869806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23d873e9744ed614f816ff481aba0d9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "_particle\u0421ollection": {fileID: 0}
+  _axisOfRotation: {x: 0, y: 1, z: 0}
+  _speedRotation: 3

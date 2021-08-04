@@ -22,10 +22,11 @@ public class PlayerLife : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Crystal")
+        Crystal crystal = other.GetComponent<Crystal>();
+        if (crystal!=null)
         {
             GetCrystal?.Invoke(1);
-            Destroy(other.gameObject);
+            crystal.Collection() ;
         }
     }
 }
