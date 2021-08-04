@@ -5,7 +5,8 @@ using UnityEngine;
 public class ModellBall : MonoBehaviour
 {
     private PlayerMove _playerMove;
-
+    [SerializeField]
+    private Transform _fishModell;
     [SerializeField]
     private float _speedRotation, _twistingSpeed, _angleOfRotation;
     private Vector3 _oldPos, _currentPos;
@@ -84,14 +85,13 @@ public class ModellBall : MonoBehaviour
 
         if (WaterTest())
         {
-            Vector3 euler = new Vector3(0, transform.eulerAngles.y, 0);
-
-            rotation = Quaternion.Euler(euler);
+            _fishModell.localEulerAngles = Vector3.Lerp(_fishModell.localEulerAngles, Vector3.zero, _speedRotation);
         }
         else
         {
-            transform.Rotate(Vector3.forward * _twistingSpeed);
+            _fishModell.Rotate(Vector3.forward * _twistingSpeed);
         }
+
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, _speedRotation);
     }
 }

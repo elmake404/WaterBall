@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1714212634442873013}
   - component: {fileID: 8400187424351373603}
   - component: {fileID: 1476512630987592640}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 8609495621483674713}
   - component: {fileID: 6289664842413076270}
   - component: {fileID: 1119918194743109750}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 5496131365869956041}
   - component: {fileID: 5176716663057533885}
   - component: {fileID: 5848518523122562195}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -412,7 +412,7 @@ GameObject:
   - component: {fileID: 8745998625741048475}
   - component: {fileID: 7721445611622354397}
   - component: {fileID: 5232566889786480902}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -505,7 +505,7 @@ GameObject:
   - component: {fileID: 1429615169749578137}
   - component: {fileID: 980734521403875970}
   - component: {fileID: 8420067100620084049}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -598,7 +598,7 @@ GameObject:
   - component: {fileID: 414449866123058272}
   - component: {fileID: 8156167629621157092}
   - component: {fileID: 8251331538793727613}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -691,7 +691,7 @@ GameObject:
   - component: {fileID: 6300494820804577628}
   - component: {fileID: 1930315476640620363}
   - component: {fileID: 5190789216241198910}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -817,7 +817,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb68e15252ec5d642954a3a4e1fe870d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speedRotation: 0.2
+  _fishModell: {fileID: 954866612760292892}
+  _speedRotation: 0.1
   _twistingSpeed: 8
   _angleOfRotation: 13
 --- !u!54 &4656801123152741774
@@ -862,7 +863,7 @@ GameObject:
   - component: {fileID: 1936768077314800303}
   - component: {fileID: 6081598058433548282}
   - component: {fileID: 9159505220902792054}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -955,7 +956,7 @@ GameObject:
   - component: {fileID: 2779430054367121339}
   - component: {fileID: 6831690024343582651}
   - component: {fileID: 3320090834102956651}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1048,7 +1049,7 @@ GameObject:
   - component: {fileID: 6290721283670944639}
   - component: {fileID: 8244227220253662167}
   - component: {fileID: 2354628242290503504}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Anchor(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
