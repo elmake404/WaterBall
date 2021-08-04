@@ -818,7 +818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedRotation: 0.2
-  _twistingSpeed: 0
+  _twistingSpeed: 8
   _angleOfRotation: 13
 --- !u!54 &4656801123152741774
 Rigidbody:
@@ -847,7 +847,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.7
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5996399339576083961
 GameObject:
