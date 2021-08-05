@@ -20,9 +20,10 @@ public class Gerridae : MonoBehaviour
     {
         if (other.gameObject.layer == 4)
         {
+
+            if ((_waters.Count == 0) && _particleWaterTouch != null)
+                Instantiate(_particleWaterTouch, transform.position, _particleWaterTouch.transform.rotation);
             _waters.Add(other.gameObject);
-            if (!_rbMain.useGravity && _particleWaterTouch != null)
-                Instantiate(_particleWaterTouch, transform.position, transform.rotation);
 
             WaterTest();
         }

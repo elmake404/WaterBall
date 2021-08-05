@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class Finish : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    private ParticleSystem _particleFinish;
+    public void Win()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(_particleFinish!=null)
+        _particleFinish.Play();
     }
 }

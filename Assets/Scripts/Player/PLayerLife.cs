@@ -30,6 +30,7 @@ public class PlayerLife : MonoBehaviour
         }
         if (other.tag == "Finish")
         {
+            other.GetComponent<Finish>().Win();
             GameStage.Instance.ChangeStage(Stage.WinGame);
         }
     }
