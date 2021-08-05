@@ -28,5 +28,9 @@ public class PlayerLife : MonoBehaviour
             GetCrystal?.Invoke(1);
             crystal.Collection() ;
         }
+        if (other.tag == "Finish")
+        {
+            GameStage.Instance.ChangeStage(Stage.WinGame);
+        }
     }
 }
