@@ -49,7 +49,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _NormalA:
         m_Texture: {fileID: 2800000, guid: 2839a80cc86eed145b6516bf6e98dbee, type: 3}
-        m_Scale: {x: 0.02, y: 0.01}
+        m_Scale: {x: 0.02, y: 183.38}
         m_Offset: {x: 0, y: 0}
     - _NormalB:
         m_Texture: {fileID: 2800000, guid: 32985090e4e09c7419310373c957eef5, type: 3}
@@ -93,7 +93,8 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.70299995, g: 1, b: 0.9935714, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _NormalPanningSpeeds: {r: 0, g: 0, b: 0, a: -0.05}
     - _Param: {r: 0.1, g: 2.5, b: 0, a: 0}
+  m_BuildTextureStacks: []
