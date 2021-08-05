@@ -3,9 +3,9 @@
     Properties
     {
         [Header(Colors)]
-        [HDR]_Color ("Color", Color) = (1,1,1,1)
-        [HDR]_FogColor("Fog Color", Color) = (1,1,1,1)
-        [HDR]_IntersectionColor("Intersection color", Color) = (1,1,1,1)
+        _Color ("Color", Color) = (1,1,1,1)
+        _FogColor("Fog Color", Color) = (1,1,1,1)
+        _IntersectionColor("Intersection color", Color) = (1,1,1,1)
 
         [Header(Thresholds)]
         _IntersectionThreshold("Intersction threshold", float) = 0
@@ -35,7 +35,6 @@
         Tags { "RenderType"="Transparent" "Queue"="Transparent" }
         Blend SrcAlpha OneMinusSrcAlpha
         ZWrite Off
-        LOD 200
 
         CGPROGRAM
         #pragma surface surf Standard fullforwardshadows alpha:premul
