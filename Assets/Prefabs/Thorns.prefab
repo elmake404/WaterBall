@@ -428,6 +428,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5133519638469002120}
+  - component: {fileID: 4930270102982228750}
   m_Layer: 7
   m_Name: Thorns
   m_TagString: Untagged
@@ -460,6 +461,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4930270102982228750
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5133519638469002123}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.49913734, y: 0.39896488, z: 1.2337358}
+  m_Center: {x: 0.12354609, y: 0.13356352, z: 0.49752367}
 --- !u!1 &6576797994883678175
 GameObject:
   m_ObjectHideFlags: 0
