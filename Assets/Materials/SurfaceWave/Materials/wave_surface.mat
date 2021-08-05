@@ -47,6 +47,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _NormalA:
+        m_Texture: {fileID: 2800000, guid: 2839a80cc86eed145b6516bf6e98dbee, type: 3}
+        m_Scale: {x: 0.02, y: 0.01}
+        m_Offset: {x: 0, y: 0}
+    - _NormalB:
+        m_Texture: {fileID: 2800000, guid: 32985090e4e09c7419310373c957eef5, type: 3}
+        m_Scale: {x: 0.01, y: 0.01}
+        m_Offset: {x: 0, y: 0}
     - _NormalMap:
         m_Texture: {fileID: 2800000, guid: ae8fb0549d6f291418d92dee85f005b3, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -73,17 +81,19 @@ Material:
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
+    - _NormalStrength: 0.02
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Scale: 0.2
+    - _Shininess: 0.8
     - _SmoothnessTextureChannel: 0
-    - _Specular: 20
+    - _Specular: 25
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.9198113, g: 0.9584055, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _NormalPanningSpeeds: {r: 0, g: 0, b: 0, a: -0.05}
     - _Param: {r: 0.1, g: 2.5, b: 0, a: 0}
-  m_BuildTextureStacks: []
